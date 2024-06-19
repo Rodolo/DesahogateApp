@@ -16,15 +16,12 @@ export const useForm = ( initialFormState: DataProps ) => {
 
     const handleOnSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const destinatario = e.currentTarget.elements['destinatario'].value;
-        const mensaje = e.currentTarget.elements['mensaje'].value;
-
         setFormEnviado(true);
-        if( destinatario !== '' && mensaje != ''){
+
+        if( formState.destinatario !== '' && formState.mensaje != ''){
             const newData =  {
-                id: (publicaciones && publicaciones?.length + 1),
-                destinatario,
-                mensaje
+                ...formState,
+                id: (publicaciones && publicaciones?.length + 1)
                }
             setPublicaciones(  (prevState: DataProps[]) =>{ 
                 sessionStorage.setItem('publicaciones', JSON.stringify([...prevState, newData]));
