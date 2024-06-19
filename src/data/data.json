@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "destinatario": "Mich",
+        "mensaje": "Hola Mich, te mando un superbeso"
+    },
+    {
+        "id": 2,
+        "destinatario": "Miches",
+        "mensaje": "Te mando un beso de la hostia, eres la mejor, no cambies, ojala mas gente como tu en el mundo"
+    },
+    {
+        "id": 3,
+        "destinatario": "Ayla",
+        "mensaje": "Hola Aylaaaa, mira lo que ha hecho el tio, que te parece?"
+    }
+]
